@@ -1,0 +1,54 @@
+.main_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  padding: 50px;
+  flex: 1;
+
+}
+
+.contents-container {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 50px;
+  flex: 2;
+}
+
+.resgister-form {
+
+  width: 200rem;
+
+}
+
+.submit {
+  padding-top: 15px;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.list-group {
+  width: 500px;
+  /* Adjust the width as needed */
+}
+
+.table {
+  padding: 10px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}

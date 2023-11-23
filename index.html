@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>FoodOrder-App</title>
+</head>
+
+<body>
+  <div class="main_container">
+    <div id="outer-container" class="container">
+      <form id="register-form" class="resgister-form">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Order Price</label>
+          <input type="number" class="form-control" id="Amount" placeholder="Total Amount" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Order Description</label>
+          <textarea class="form-control" id="category" rows="3" required></textarea>
+        </div>
+        <select class="form-select" id='tableOption' aria-label="Default select example" required>
+          <option selected>Select the table</option>
+          <option value="Table1">Table1</option>
+          <option value="Table2">Table2</option>
+          <option value="Table3">Table3</option>
+        </select>
+        <div class="submit">
+          <input type="submit" value="Add Bill" class="btn btn-success"></input>
+        </div>
+      </form>
+    </div>
+    <!-- second div -->
+    <div class="contents-container">
+      <div class="table_container">
+        <div class="table">
+          <ul id="table1" class="list-group">
+            <h4>Table1</h4>
+            <!-- <li class="list-group-item">OrderName:Chicken briyani,Price:200
+              <button type="button" class="btn btn-danger">Delete</button>
+            </li> -->
+          </ul>
+        </div>
+        <div class="table">
+          <ul id="table2" class="list-group">
+            <h4>Table2</h4>
+            <!-- <li class="list-group-item">Chicken briyani
+              <button type="button" class="btn btn-danger">Delete</button>
+            </li> -->
+          </ul>
+        </div>
+        <div class="table">
+          <ul id="table3" class="list-group">
+            <h4>Table3</h4>
+            <!-- <li class="list-group-item">Chicken briyani
+              <button type="button" class="btn btn-danger">Delete</button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+    integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
