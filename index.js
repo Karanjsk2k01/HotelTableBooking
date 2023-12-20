@@ -10,7 +10,7 @@ let Table3 = document.getElementById('table3');
 window.addEventListener('DOMContentLoaded', (e) => {
   e.preventDefault();
 
-  axios.get('https://crudcrud.com/api/57ee07fda2d1462cae23e6be7c0c23a2/tableBooking1')
+  axios.get('https://crudcrud.com/api/6c0b468a96e94b5a950863a418537d85/tableBooking1')
     .then((res) => {
       let display = res.data
       display.forEach(element => {
@@ -31,7 +31,7 @@ registerForm.addEventListener('submit', (e) => {
   let category = document.getElementById('category').value;
   let tableOption = document.getElementById('tableOption').value;
 
-  axios.post('https://crudcrud.com/api/57ee07fda2d1462cae23e6be7c0c23a2/tableBooking1',
+  axios.post('https://crudcrud.com/api/6c0b468a96e94b5a950863a418537d85/tableBooking1',
     {
       Amount: Amount,
       category: category,
@@ -89,7 +89,7 @@ function deleteItem(e) {
     if (confirm('Are you want to delete ?')) {
       let parentNode = e.target.parentNode;
       let userid = parentNode.getAttribute('user_id');
-      axios.delete(`https://crudcrud.com/api/57ee07fda2d1462cae23e6be7c0c23a2/tableBooking1/${userid}`)
+      axios.delete(`https://crudcrud.com/api/6c0b468a96e94b5a950863a418537d85/tableBooking1/${userid}`)
         .then((res) => parentNode.remove())
         .catch(err => console.log(err))
     }
